@@ -164,11 +164,11 @@ export default function App() {
 
             <div className="flex items-center gap-2 border-l border-slate-200 pl-3">
               <div className="w-7 h-7 rounded bg-slate-100 border border-slate-200 flex items-center justify-center text-xs font-bold text-slate-700 uppercase">
-                {currentUser?.name.slice(0, 2)}
+                {currentUser?.name?.slice(0, 2) || '??'}
               </div>
               <div className="hidden md:block text-left leading-none">
-                <span className="font-bold text-xs text-slate-800 block">{currentUser?.name}</span>
-                <span className="text-[9px] text-slate-400 block font-mono mt-0.5">{currentUser?.email}</span>
+                <span className="font-bold text-xs text-slate-800 block">{currentUser?.name || 'Loading...'}</span>
+                <span className="text-[9px] text-slate-400 block font-mono mt-0.5">{currentUser?.email || ''}</span>
               </div>
             </div>
           </div>
