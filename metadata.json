@@ -1,0 +1,6 @@
+{
+  "name": "Gappify Implementation Tracker",
+  "description": "Multi-tenant implementation tracker for Gappify team and clients with Excel imports, role-based access, notifications, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
